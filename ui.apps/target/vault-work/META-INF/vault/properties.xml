@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>AEM Sample Project Content Package</comment>
+<entry key="createdBy">pcadmin</entry>
+<entry key="name">sample-aem-project.ui.apps</entry>
+<entry key="created">2018-03-27T14:06:58.817+0530</entry>
+<entry key="groupId">com.sampleaem</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">my-packages</entry>
+<entry key="description">Maven Multimodule project for AEM Sample Project.</entry>
+<entry key="artifactId">sample-aem-project.ui.apps</entry>
+<entry key="path">/etc/packages/my-packages/sample-aem-project.ui.apps.zip</entry>
+</properties>
