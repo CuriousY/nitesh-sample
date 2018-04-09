@@ -1,5 +1,5 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 #target folder
-/core/target
-ui.apps/target/
+core/target/**
+ui.apps/target/**
