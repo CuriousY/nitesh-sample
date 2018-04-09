@@ -1,0 +1,12 @@
+ <div>
+
+	<h2>Title directly fetched  ${properties.jcr:titleHeading}</h2>
+
+</div>
+<div data-sly-use.content="org.sample.model.ContentBodyModel" >
+	<h3> title using models = ${content.heading} </h3>
+</div>
+
+<div data-sly-use.content="org.sample.pojo.ContentBodyPojo" >
+		<h4> title using wcmpojo = ${content.heading} </h4>
+</div>

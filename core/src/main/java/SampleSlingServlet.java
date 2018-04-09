@@ -11,6 +11,7 @@ import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.junit.Assert;
 
 @Component(service = Servlet.class, property = { Constants.SERVICE_DESCRIPTION + "=Simple Demo Servlet",
 		"sling.servlet.methods=" + HttpConstants.METHOD_POST,		
