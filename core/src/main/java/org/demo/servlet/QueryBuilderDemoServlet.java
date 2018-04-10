@@ -1,4 +1,4 @@
-package org.demo;
+package org.demo.servlet;
 
 import java.io.IOException;
 import java.util.HashMap;

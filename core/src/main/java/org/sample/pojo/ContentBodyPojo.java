@@ -1,6 +1,8 @@
 package org.sample.pojo;
 
+import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.ValueMap;
+import org.demo.service.IGreeter;
 
 import com.adobe.cq.sightly.WCMUsePojo;
 
@@ -19,8 +21,15 @@ public class ContentBodyPojo extends WCMUsePojo {
 		// TODO Auto-generated method stub
 		
 		ValueMap map = getProperties();
+		SlingHttpServletRequest request = getRequest();
 		
-		heading = "Hello from WCMPOJO, Your title is " + map.get("jcr:titleHeading").toString();
+		IGreeter greeter = getSlingScriptHelper().getService(IGreeter.class);
+		
+		heading = "Hello from WCMPOJO, Your title is " + map.get("jcr:titleHeading").toString() + greeter.sayHello();
+		
+		
+		
+				
 		
 	}
 
