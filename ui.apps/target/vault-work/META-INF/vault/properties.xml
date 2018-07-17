@@ -4,6 +4,7 @@
 <comment>AEM Sample Project Content Package</comment>
 <entry key="createdBy">pcadmin</entry>
 <entry key="name">sample-aem-project.ui.apps</entry>
+<entry key="created">2018-07-16T19:33:04.423+0530</entry>
 <entry key="groupId">com.sampleaem</entry>
 <entry key="version">0.0.1-SNAPSHOT</entry>
 <entry key="requiresRoot">false</entry>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    width="1000"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Hero Banner">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="set title for the feature list items"
+                        fieldLabel="Title"
+                        name="./title"
+                        width="300"
+                        xtype="textfield"/>
+                    <ctaLink
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Destination link for each item"
+                        fieldLabel="CTA Link"
+                        name="./ctaLink"
+                        rootPath="/content"
+                        width="300"
+                        xtype="pathfield"/>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="set title for the feature list items"
+                        fieldLabel="Title"
+                        name="./description"
+                        width="300"
+                        xtype="textfield"/>
+                    <imagePath
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Destination link for each item"
+                        fieldLabel="CTA Link"
+                        name="./imagePath"
+                        rootPath="/content"
+                        width="300"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Featured Items">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <featuredItemList
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Configure feature items"
+                        key="featureItemsList"
+                        name="./featureItemList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="multifieldpanel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <title
+                                    jcr:primaryType="cq:Widget"
+                                    fieldDescription="set title for the feature list items"
+                                    fieldLabel="title"
+                                    key="id"
+                                    maxLength="{Long}30"
+                                    maxLengthText="Field Limit is 30"
+                                    width="300"
+                                    xtype="textfield"/>
+                                <ctaLink
+                                    jcr:primaryType="cq:Widget"
+                                    fieldDescription="Destination link for each item"
+                                    fieldLabel="CTA Link"
+                                    key="ctaLink"
+                                    rootPath="/content"
+                                    width="300"
+                                    xtype="pathfield"/>
+                            </items>
+                        </fieldConfig>
+                    </featuredItemList>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

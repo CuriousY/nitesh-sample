@@ -1,0 +1,51 @@
+<sly data-sly-include="/libs/foundation/global.jsp" />
+<sly data-sly-include="/libs/wcm/core/components/init/init.jsp" />
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.all @ categories='etc.sample.home'}"/>
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<body>
+		<span class="d-block pt-64"></span>
+
+		<div class="container-fluid home-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 home-1-left">
+						<span>Article</span>
+						<h2>Uneasy, pessimistic, and concerned: Insights from the 2018  Millennial Survey</h2>
+						<p> annual Millennial Survey shows younger workers increasingly downbeat about employers’ priorities - and their own preparedness for the future.</p>
+					</div>
+				</div>				
+			</div>
+			<div class="row home-1-bottom">
+				<div class="container">
+					<span class="text-top">FEATURED INSIGHTS:</span>
+					<ul>
+						<li class="active">
+							<span>1</span>Industries
+						</li>
+						<li>
+							<span>2</span>Innovation
+						</li>
+						<li>
+							<span>3</span>Economics
+						</li>
+						<li>
+							<span>4</span>Global Regions
+						</li>
+					</ul>
+				</div>
+			</div>			
+		</div>
+
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	</body>
+</html>
+<div data-sly-resource="${'par' @ resourceType='foundation/components/parsys'}"></div>
+

@@ -1,2 +1,7 @@
 D:\AEM_Sample\nitesh-sample\core\src\main\java\SampleSlingServlet.java
-D:\AEM_Sample\nitesh-sample\core\src\main\java\org\demo\QueryBuilderDemoServlet.java
+D:\AEM_Sample\nitesh-sample\core\src\main\java\org\sample\model\ContentBodyModel.java
+D:\AEM_Sample\nitesh-sample\core\src\main\java\org\demo\servlet\QueryBuilderDemoServlet.java
+D:\AEM_Sample\nitesh-sample\core\src\main\java\org\sample\pojo\ContentBodyPojo.java
+D:\AEM_Sample\nitesh-sample\core\src\main\java\org\demo\service\IGreeter.java
+D:\AEM_Sample\nitesh-sample\core\src\main\java\org\demo\impl\HelloGreeter.java
+D:\AEM_Sample\nitesh-sample\core\src\main\java\org\sample\pojo\ContentHeroPojo.java

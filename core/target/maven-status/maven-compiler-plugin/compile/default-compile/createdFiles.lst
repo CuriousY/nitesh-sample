@@ -1,2 +1,7 @@
+org\demo\service\IGreeter.class
+org\sample\model\ContentBodyModel.class
 SampleSlingServlet.class
-org\demo\QueryBuilderDemoServlet.class
+org\demo\impl\HelloGreeter.class
+org\sample\pojo\ContentBodyPojo.class
+org\demo\servlet\QueryBuilderDemoServlet.class
+org\sample\pojo\ContentHeroPojo.class

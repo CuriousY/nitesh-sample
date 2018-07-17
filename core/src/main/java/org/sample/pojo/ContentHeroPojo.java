@@ -1,7 +1,9 @@
 package org.sample.pojo;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -23,8 +25,14 @@ public class ContentHeroPojo extends WCMUsePojo {
 	private String heroImagePath;
 
 	private String strFeatureList;
+	
+	private Map<String, String> featureMap;
 
-	private List<HashMap> featureList;
+	private List<Map<String, String>> featureList;
+
+	public Map<String, String> getFeatureMap() {
+		return featureMap;
+	}
 
 	public String getHeroLink() {
 		return heroLink;
@@ -50,7 +58,7 @@ public class ContentHeroPojo extends WCMUsePojo {
 		return heroImagePath;
 	}
 
-	public List<HashMap> getFeatureList() {
+	public List<Map<String, String>> getFeatureList() {
 		return featureList;
 	}
 
@@ -63,16 +71,19 @@ public class ContentHeroPojo extends WCMUsePojo {
 			heroDescription = map.get("description", String.class);
 			heroImagePath = map.get("imagePath", String.class);
 			String[] test = map.get("featureItemList", String[].class);
+			featureList = new ArrayList<Map<String, String>>();
 			JSONObject obj = null;
+			featureMap = new HashMap<String, String>();
 			if (test.length > 0) {
 				for (int i = 0; i < test.length; i++) {
 					obj = new JSONObject(test[i]);
+					if (obj != null) {
+						featureMap.put("title", obj.optString("title"));
+						featureMap.put("ctaLink", obj.optString("ctaLink"));
+					}
+					featureList.add(new HashMap(featureMap));
 				}
 			}
-			strFeatureList = obj.getString("ctaLink");
-
 		}
-
 	}
-
 }
